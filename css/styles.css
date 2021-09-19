@@ -1,0 +1,108 @@
+.header {
+  background-image: url("../images/header3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  object-fit: fill;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  
+}
+
+h1 {
+  padding-top: 150px;
+  font-size: 500%;
+
+}
+
+.body {
+  background-image: url("../images/body1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  object-fit: fill;
+  background-position: center center;
+  position: relative;
+}
+
+.pizza h4 {
+  text-align: center;
+  padding-top: 30px;
+  background-color: black;
+  color: rgb(167, 0, 0);
+  padding-bottom: 30px;
+}
+
+.row {
+  margin: 50px;
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 400px;
+  color: rgb(184, 0, 0);
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+}
+
+.money {
+  text-align: center;
+  background-color: black;
+  color: rgb(186, 0, 0);
+  margin: 50px;
+  /* padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 150%; */
+}
+
+.pizzan {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 100%;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  backdrop-filter: blur(5px)
+}
+
+.delivery p {
+  display: none;
+}
+
+.delivery_pickup {
+  text-align: center;
+  border: 1px solid black;
+  color: rgb(146, 0, 0);
+  margin: 50px;
+  backdrop-filter: blur(5px)
+}
+
+.button {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: rgb(106, 6, 6);
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+#name {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+#email {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: transparent;
+}
