@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  
+</head>
+<body>
+  <div class="header">
+    <h1>A-Round Pizza</h1>
+    <h3>You need it...we knead it.</h3>
+  </div>
+  <div class="body">
+    <div class="pizza">
+      <h4>BUILD YOUR PIZZA!</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="crust">
+                <h3>Crust</h3>
+                <input type="radio" id="crispy" name="crust" value="100" class="crustc">
+                <label for="crispy">Crispy (+kshs.100)</label><br>
+                <input type="radio" id="stuffed" name="crust" value="200" class="crustc"> 
+                <label for="stuffed">Stuffed (+kshs.200)</label><br>
+                <input type="radio" id="gfree" name="crust" value="300" class="crustc">
+                <label for="gluten-free">Gluten-free (+kshs.300)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="toppings">
+                <h3>Toppings</h3>
+                <input type="checkbox" id="pepperoni" name="pepperoni" value="100">
+                <label for="pepperoni">Pepperoni (+kshs.100)</label><br>
+                <input type="checkbox" id="mushrooms" name="mushrooms" value="150">
+                <label for="mushrooms">Mushrooms (+kshs.150)</label><br>
+                <input type="checkbox" id="onions" name="onions" value="50">
+                <label for="onions">Onions (+kshs.50)</label><br>
+                <input type="checkbox" id="sausage" name="sausage" value="100">
+                <label for="sausage">Sausage (+kshs.100)</label><br>
+                <input type="checkbox" id="bacon" name="bacon" value="125">
+                <label for="bacon">Bacon (+kshs.125)</label><br>
+                <input type="checkbox" id="echeese" name="echeese" value="115">
+                <label for="extra cheese">Extra cheese (+kshs.115)</label><br>
+                <input type="checkbox" id="pineapple" name="pineapple" value="75">
+                <label for="pineapple">Pineapple (+kshs.75)</label><br>
+                <input type="checkbox" id="bolives" name="bolives" value="90">
+                <label for="black olives">Black olives (+kshs.90)</label><br>
+                <input type="checkbox" id="gpeppers" name="gpeppers" value="50">
+                <label for="green peppers">Green peppers (+kshs.50)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="size">
+                <h3>Size</h3>
+                <input type="radio" id="small" name="size" value="200" class="sizec">
+                <label for="small">Small (+kshs.200)</label><br>
+                <input type="radio" id="medium" name="size" value="400" class="sizec">
+                <label for="medium">Medium (+kshs.400)</label><br>
+                <input type="radio" id="large" name="size" value="600" class="sizec">
+                <label for="large">Large (+kshs.600)</label><br>
+                <input type="radio" id="jumbo" name="size" value="800" class="sizec">
+                <label for="jumbo">Jumbo (+kshs.800)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="money">
+      <p>Total: kshs.<span class="total"></span></p>
+    </div>
+    <form action="" class="pizzan">
+      <label for="number of pizzas">How many pizzas would you like?</label>
+      <input type="number" id="pnumber" name="pnumber">
+    </form>
+    <div class="delivery_pickup">
+      <div class="delivery">
+        <h4>DELIVERY OR PICK-UP?</h4>
+        <input type="radio" id="delivery" name="delivery" value="250">
+        <label for="delivery">Delivery</label>
+        <p id="del">Pay an additional Kshs.250</p>
+      </div>
+      <div class="pickup">
+        <input type="radio" id="pickup" name="delivery">
+        <label for="pickup">Pick up</label>
+      </div>
+    </div>
+
+        <!-- <input type="submit" value="Checkout" id="checkout"> -->
+    <div class="button">
+      <button type="submit" onClick="submitForm()" id="checkout">checkout</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>GET IN TOUCH</h3>
+        <i class="fa fa-facebook fa-lg"></i><br>
+        <i class="fa fa-twitter fa-lg"></i><br>
+        <i class="fa fa-instagram fa-lg"></i><br>
+        <i class="fa fa-linkedin fa-lg"></i><br>
+      </div>
+      <div class="col-md-4">
+        <h4>CALL US</h4>
+        <p>+254 712 345 678</p>
+        <p>+254 901 234 567</p>
+        <h4>BUSINESS HOURS</h4>
+        <p>Monday - Friday...8:00am-9:00pm</p>
+      </div>
+      <div class="col-md-4">
+        <input type="text" id="name" name="name" placeholder="Enter your name..."><br>
+        <input type="email" id="email" name="email" placeholder="Enter a valid email address..."><br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Enter your message here..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
